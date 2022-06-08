@@ -19,7 +19,15 @@ repositories {
 }
 
 dependencies {
+
+    //bybit
+    implementation 'io.contek.invoker:invoker-bybit-api:2.15.0'
+
+    //okhttp
+    implementation group: 'com.squareup.okhttp3', name: 'okhttp', version: '4.9.3'
+
     implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
